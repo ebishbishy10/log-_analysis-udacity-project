@@ -35,5 +35,5 @@ This is a python module that uses information of large database of a web server 
   <pre>python tool.py</pre>
   
 ### Output:
-![Screenshot.jpg]()
+https://github.com/ebishbishy10/log-_analysis-udacity-project/blob/master/Screenshot.png
 
