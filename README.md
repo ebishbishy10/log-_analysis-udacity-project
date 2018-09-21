@@ -20,7 +20,7 @@ This is a python module that uses information of large database of a web server 
 * **error_percentage():** Print days on which more than 1% of requests lead to errors.
 
 ## Instructions
-* Install [ href="https://www.vagrantup.com/">Vagrant] and [ href="https://www.virtualbox.org/wiki/Downloads">VirtualBox.]
+* Install [https://www.vagrantup.com/]Vagrant and [https://www.virtualbox.org/wiki/Downloads"]VirtualBox. 
 * Clone the repository to your local machine:</h4>
   git clone [https://github.com/ebishbishy10/log-_analysis-udacity-project.git]
 * Start the virtual machine
