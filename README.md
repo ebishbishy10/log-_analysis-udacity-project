@@ -21,10 +21,10 @@ This is a python module that uses information of large database of a web server 
 
 ## Instructions
 * To run this module succesfully make sure that you install:
-    *[python](https://www.python.org/downloads/)
-    *[psycopg2 module](http://initd.org/psycopg/download/)
-    *[Postgresql](https://www.postgresql.org/download/)
-    *[newsdata](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
+    ..*[python](https://www.python.org/downloads/)
+    ..*[psycopg2 module](http://initd.org/psycopg/download/)
+    ..*[Postgresql](https://www.postgresql.org/download/)
+    ..*[newsdata](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
 * Install [https://www.vagrantup.com/downloads.html] and [https://www.virtualbox.org/wiki/Downloads] 
 * Clone the repository to your local machine:</h4>
   git clone [https://github.com/ebishbishy10/log-_analysis-udacity-project.git]
