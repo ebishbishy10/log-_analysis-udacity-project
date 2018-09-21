@@ -21,12 +21,19 @@ This is a python module that uses information of large database of a web server 
 
 ## Instructions
 * To run this module succesfully make sure that you install:
-    ..*[python](https://www.python.org/downloads/)
-    ..*[psycopg2 module](http://initd.org/psycopg/download/)
-    ..*[Postgresql](https://www.postgresql.org/download/)
-    ..*[newsdata](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
-* Install [https://www.vagrantup.com/downloads.html] and [https://www.virtualbox.org/wiki/Downloads] 
-* Clone the repository to your local machine:</h4>
+
+*[python](https://www.python.org/downloads/)
+
+*[psycopg2 module](http://initd.org/psycopg/download/)
+
+*[Postgresql](https://www.postgresql.org/download/)
+
+*[newsdata](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
+
+
+## Recommended setup
+* Install [vagrant](https://www.vagrantup.com/downloads.html) and [virtualbox](https://www.virtualbox.org/wiki/Downloads) 
+* Clone the repository to your local machine:
   git clone [https://github.com/ebishbishy10/log-_analysis-udacity-project.git]
 * Start the virtual machine
   From your terminal, inside the project directory, run the command `vagrant up`. This will cause Vagrant to download the Linux           operating   system and install it.
