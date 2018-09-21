@@ -23,9 +23,9 @@ def topviews():
 
 
 sql_query = \
-    '''SELECT title, COUNT(path) as views\
-     FROM log join articles on '/article/' || articles.slug = log.path \
-     WHERE left(path,9)='/article/'group by path,title\
+    '''SELECT title, COUNT(path) as views
+     FROM log join articles on '/article/' || articles.slug = log.path
+     WHERE left(path,9)='/article/'group by path,title
      order by views desc limit 3'''
 
 data = connect(DBNAME, sql_query)
@@ -45,7 +45,7 @@ sql_query = \
       SELECT name ,sum(articlevies.views) as autorviews FROM (
       SELECT name , COUNT(path) as views
       FROM log,articles,authors WHERE '/article/' || articles.slug = log.path
-       and articles.author = authors.id  group by path, name) as articlevies 
+      and articles.author = authors.id  group by path, name) as articlevies
       group by name order by autorviews desc
                                          '''
 data = connect(DBNAME, sql_query)
@@ -62,18 +62,18 @@ def error_percentage():
 
 sql_query = \
     '''
-     SELECT  daylogs.time , 
-    (errors.errorsaday::float*100 / daylogs.logsaday::float) 
-     as errorsp from (select (time :: date) , count (time ) 
-     as errorsaday from log
-     where status = '404 NOT FOUND'
-     group by (time :: date))as errors ,
-     (SELECT (time :: date) , 
-     count (time ) as logsaday from log
-     group by (time :: date)) as daylogs 
-     where daylogs.time = errors.time and 
-     (errors.errorsaday::float*100 / daylogs.logsaday::float) > 1
-     group by daylogs.time,errors.errorsaday,daylogs.logsaday
+    SELECT  daylogs.time ,
+    (errors.errorsaday::float*100 / daylogs.logsaday::float)
+    as errorsp from (select (time :: date) , count (time )
+    as errorsaday from log
+    where status = '404 NOT FOUND'
+    group by (time :: date))as errors ,
+    (SELECT (time :: date) ,
+    count (time ) as logsaday from log
+    group by (time :: date)) as daylogs
+    where daylogs.time = errors.time and
+    (errors.errorsaday::float*100 / daylogs.logsaday::float) > 1
+    group by daylogs.time,errors.errorsaday,daylogs.logsaday
 
      '''
 data = connect(DBNAME, sql_query)
