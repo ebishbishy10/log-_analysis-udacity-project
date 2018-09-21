@@ -21,6 +21,7 @@ This is a python module that uses information of large database of a web server 
 
 ## Instructions
 * To run this module succesfully make sure that you install:
+
 *[python](https://www.python.org/downloads/)
 
 *[psycopg2 module](http://initd.org/psycopg/download/)
